@@ -8,6 +8,7 @@ message = """Subject: Your grade
 
 Hi {name}, your grade is {grade}"""
 from_address = "shreyasgup21@gmail.com"
+# turn on access to local device via security feature of google account
 password = input("Type your password and press enter: ")
 
 context = ssl.create_default_context()
