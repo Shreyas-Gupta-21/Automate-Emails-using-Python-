@@ -12,6 +12,7 @@ from_address = "shreyasgup21@gmail.com"
 password = input("Type your password and press enter: ")
 
 context = ssl.create_default_context()
+# for sending from different servers change the server name in smtp.gmail.com
 with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
     server.login(from_address, password)
     with open("ntacts_file.csv") as file:
